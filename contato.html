@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <title>Pretos no Topo</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="index.html#us"> Sobre nós </a></li>
+                <li><a href="#"> Notícias </a>
+                    <ul id="ul-drop">
+                        <li> <a href="interfaceEsporte.html" id="a-nav"> Esporte </a> </li>
+                        <li> <a href="interfaceArte.html" id="a-nav"> Arte </a>  </li>
+                        <li> <a href="interfaceCiencia.html" id="a-nav"> Ciência </a> </li>
+                        <li> <a href="interfaceMovi.html" id="a-nav"> Movimento </a>  </li>
+                    </ul>
+                </li>
+                <li><a href="contato.html"> Contato </a></li>
+              
+            </ul>
+        </nav>
+
+     
+    </header>
+    <main>
+        <section id="contato">
+            <h1 class="titulo-primario"> Contato </h1>
+            <h4 class="contato-info"> Para nos enviar uma mensagem preencha o formulário a seguir! </h4>
+            <span class="advise"> </span>
+            <form>
+                    <div>
+                        <label for="name"> Nome:* </label>
+                        <input type="text" name="name" placeholder="Nome Completo" class="format-input required">
+                    </div>
+
+                    <div>
+                        <label for="fone"> Telefone: (opcional) </label>
+                        <input type="tel" name="fone" placeholder="(xx)xxxx-xxxx" class="format-input">
+                    </div>
+                       
+                    <div>
+                        <label for="mail"> E-mail:* </label>
+                        <input type="email" name="mail" placeholder="xxxxxxxx@xxxxxxx.com.br" class="format-input required">
+                    </div>
+                       
+                    <div>
+                        <label for="yesno" > Deseja receber novidades em seu email? </label>
+
+                        <label> 
+                            <input type="radio" name="yesno" value="yes" checked>
+                            <label for="yes" class="radio"> Sim </label>
+                            <input type="radio" name="yesno" value="no">
+                            <label for="no" class="radio" value-> Não </label>
+                        </label>  
+                    </div>
+
+                    <div>
+                        <label for="assunto" > Assunto:* </label>
+                        <input type="text" name="assunto" class="format-input required">
+                    </div>
+                       
+                    <div>
+                        <label for="msg"> Mensagem:* </label>
+                        <textarea name="msg" placeholder="Digite sua mensagem" class="required" ></textarea>
+                    </div>
+                       
+
+                        <div id="button-div">
+                            <input type="submit" name="enviar" value="Enviar" class="inputbutton" id="submit">
+                            <input type="reset" name="limpar" value="Limpar" class="inputbutton" >
+                        </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h1 class="titulo-primario"> Informações Gerais </h1>
+        <div class="flex-footer">
+            <ul>
+                <li style="font-weight: bold;font-size: 30px;"> Pretos no Topo </li>
+                <li> Redes Sociais:  </li>
+                <li>
+                    <div class="flex-icons"> 
+                        <a href="#"><img src="whatsapp.png" alt="Whatsapp" title="Whatsapp"></a>
+                        <a href="#"><img src="insta.png" alt="Instagram" title="Instagram"></a>
+                        <a href="#"><img src="twitter.png" alt="Twitter" title="Twitter"></a>
+                        <a href="#"><img src="facebook.png" alt="Facebook" title="Facebook"></a>
+                        <a href="#"><img src="enviar.png" alt="Email" title="Email"></a>
+                    </div>
+                </li>
+                <li> Pretos no Topo &copy by Alex Martins</li>
+            </ul>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3715.989020732197!2d-46.530743685438104!3d-21.350928289570966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b63fd0272469bf%3A0xe013b6753e91a94!2sInstituto%20Federal%20de%20Educa%C3%A7%C3%A3o%2C%20Ci%C3%AAncia%20e%20Tecnologia%20do%20Sul%20de%20Minas%20Gerais%20-%20Campus%20Muzambinho!5e0!3m2!1spt-BR!2sbr!4v1594258674255!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+
+    </footer>
+
+    <script src="jquery.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
